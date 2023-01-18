@@ -32,12 +32,12 @@ li{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    overflow: auto;
+    overflow-y: scroll;
 }
 .item{
-    width: 80%;
+    width: 320px;
     margin: 6px 3px 6px;
-    position:initial;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +45,12 @@ li{
     box-sizing: border-box;
 }
 .item-text{
+    width: 296px;
     height: 100%;
     font-size: 1.5em;
     margin: 5px;
+}
+::-webkit-scrollbar{
+    position: absolute;
+    width: 0px;
 }
