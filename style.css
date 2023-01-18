@@ -4,17 +4,21 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: grey;
 }
 li{
     list-style-type: none;
 }
 #box{
-    width: 400px;
+    width: calc(100vw - 10px);
+    max-width: 400px;
     height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 5px solid black;
+    border-radius: 10px;
+    background-color: white;
 }
 #input-box{
     width: 280px;
