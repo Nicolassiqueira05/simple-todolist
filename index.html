@@ -6,6 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do list</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+        @font-face {
+    font-family: 'Poppins';
+    src: url('./media/fonts/Poppins-Regular.ttf');
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    font-family: 'Poppins';
+}
+li{
+    list-style-type: none;
+}
+#box{
+    width: calc(100vw - 10px);
+    max-width: 400px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+#input-box{
+    width: 320px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+#input-text{
+    width: 240px;
+    height: 34px;
+    margin: 0px;
+    padding: 0px;
+}
+#add-button{
+    width: 38px;
+    height: 38px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#add-image{
+    width: 16px;
+    height: 16px;
+}
+.delete-button{
+    min-width: 38px;
+    min-height: 38px;
+    margin: 2px 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delete-image{
+    width: 20px;
+    height: 20px;
+}
+#list{
+    width: 100%;
+    height: 600px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+}
+.item{
+    width: 320px;
+    margin: 6px 3px 6px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid black;
+    box-sizing: border-box;
+}
+.item-text{
+    width: 296px;
+    height: 100%;
+    font-size: 1.5em;
+    margin: 5px;
+}
+::-webkit-scrollbar{
+    position: absolute;
+    width: 0px;
+}
+
+    </style>
 </head>
 <body>
     <div id="box">
