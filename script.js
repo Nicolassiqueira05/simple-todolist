@@ -33,7 +33,7 @@ function delItem(item){
 function printList(){
     listEl.innerHTML = null
     for (let i = 0; i < list.length; i++){
-        listEl.innerHTML = listEl.innerHTML + "<li class='item'><p class='item-text'>" + list[i] + "</p>" + "<button id='delete-button' onClick='delItem("+ i +")'>X</button></li>"
+        listEl.innerHTML = listEl.innerHTML + "<li class='item'><p class='item-text'>" + list[i] + "</p>" + "<button class='delete-button' onClick='delItem("+ i +")'><img class='delete-image' src='./media/icons/close.svg' alt='x'></button></li>"
     }
 }
 
