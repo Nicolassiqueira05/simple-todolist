@@ -9,7 +9,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-color:antiquewhite;
     font-family: 'Poppins';
 }
 li{
@@ -22,9 +22,10 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px solid black;
+    border: 5px solid white;
     border-radius: 10px;
     background-color: white;
+    box-shadow: 6px 6px rgb(192, 177, 157);
 }
 #input-box{
     width: 320px;
@@ -33,32 +34,45 @@ li{
     justify-content: space-between;
 }
 #input-text{
-    width: 240px;
+    width: 270px;
     height: 34px;
     margin: 0px;
     padding: 0px;
+    border: 3px solid lightgray;
 }
 #add-button{
-    width: 38px;
-    height: 38px;
+    min-width: 40px;
+    min-height: 40px;
+    background-color: white;
+    border: 3px solid lightgray;
+    border-radius: 10px;
     margin: 0px;
     padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#add-button:hover{
+    background-color: rgb(238, 238, 238);
 }
 #add-image{
     width: 16px;
     height: 16px;
 }
 .delete-button{
-    min-width: 38px;
-    min-height: 38px;
+    min-width: 40px;
+    min-height: 40px;
+    background-color: white;
+    border: 3px solid lightgray;
+    border-radius: 10px;
     margin: 2px 0px;
     padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.delete-button:hover{
+    background-color: rgb(238, 238, 238);
 }
 .delete-image{
     width: 20px;
@@ -81,14 +95,14 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid lightgrey;
     box-sizing: border-box;
 }
 .item-text{
     width: 296px;
-    height: 100%;
+    height: 85%;
     font-size: 1.5em;
-    margin: 5px;
+    margin: 0px;
 }
 ::-webkit-scrollbar{
     position: absolute;
