@@ -92,6 +92,7 @@ li{
 }
 .item{
     width: 320px;
+    height: fit-content;
     margin: 6px 3px 6px;
     position: relative;
     display: flex;

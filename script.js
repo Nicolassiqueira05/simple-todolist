@@ -7,7 +7,7 @@ const Ls = localStorage
 let list
 
 function setList(){
-    //this fucntion read the list, set it as an array with needed, else its load the local storage inside list
+    //this function read the list, set it as an array with needed, else its load the local storage inside list
     //alert: this function should be called only one time
     if(Ls.getItem("items") == null){
         Ls.setItem("items", "[]")
