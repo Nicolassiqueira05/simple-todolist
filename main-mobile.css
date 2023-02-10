@@ -111,3 +111,16 @@ li{
     position: absolute;
     width: 0px;
 }
+#box-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#github{
+    text-align: center;
+}
+#name{
+    margin: 0px;
+}
+
